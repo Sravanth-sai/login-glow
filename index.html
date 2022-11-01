@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+
+    </head>
+
+    <body>
+        <div class="main-container">
+            <form action="" onsubmit="return false" class="login-form">
+                <h2 class="form-heading">Login</h2>
+                <div class="form-item username-input">
+                    <label for="username" class="input-label"">Username</label>
+                    <input type="text" class="input-item" id="username" onfocus="onFocus(this)" onblur="onBlur(this)">
+                </div>
+                <div class="form-item password-input">
+                    <label for="password" class="input-label">Password</label>
+                    <input type="password" class="input-item" id="password" onfocus="onFocus(this)" onblur="onBlur(this)">
+                </div>
+                
+                <button class="submit-btn" onclick="loading(this)">
+                    <div class="submit-text">Submit</div>
+                    
+                    <div class="submit-loader">
+                        <span class="loading animate"></span>
+                        <span class="loading animate"></span>
+                        <span class="loading animate"></span>
+                        <!-- <span class="loading animate"></span> -->
+                    </div>
+                </button>
+            </form>
+        </div>
+
+        <script src="./app.js"></script>
+    </body>
+</html>
